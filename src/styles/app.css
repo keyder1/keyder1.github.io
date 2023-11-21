@@ -136,12 +136,11 @@ main {
   position: fixed;
   top: var(--navbar-height);
   bottom: 0;
-  transition: opacity 0.2s ease-in-out,
+  transition: opacity 1s ease-in-out,
               visibility 0.2s ease-in-out,
               left 0.2s ease-in-out,
               right 0.2s ease-in-out;
   opacity: 0;
-  visibility: hidden;
 }
 
 #navbar-menu.sidebar,
@@ -307,8 +306,55 @@ h1:nth-child(3) {
 
 #servicios{
   text-align: center;
+  padding: 2% 5%;
+  background-color:hsla(120,84%,92%,1);
+  background-image:
+  radial-gradient(at 74% 7%, hsla(195,81%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 8% 3%, hsla(0,0%,100%,0.69) 0px, transparent 50%),
+  radial-gradient(at 94% 90%, hsla(145,100%,56%,0.76) 0px, transparent 50%),
+  radial-gradient(at 4% 85%, hsla(139,100%,65%,1) 0px, transparent 50%);
+}
+
+#nosotros{
+  text-align: center;
   padding: 5% 10%;
   background: rgb(34,193,195);
   background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
+
+.container-grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+    gap: 5rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.container-grid * {
+  color: #000;
+  position: relative;
+}
+
+.container-grid *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
