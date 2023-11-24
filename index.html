@@ -5,8 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/styles/app.css" rel="stylesheet">
+  <link href="src/styles/nosotros.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
   <link rel="icon" href="favicon.ico">
   <title>NATIVO</title>
 </head>
@@ -27,7 +33,7 @@
       <div id="navbar-menu" class="left sidebar">
         <ul class="navbar-links">
           <li class="navbar-item"><a class="navbar-link" href="#servicios">Servicios</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="/blog"> Nosotros</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#nosotros"> Identificanos</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/blog"> Clientes</a></li>
           <li class="navbar-item"><a class="navbar-link" href="/contact">Contacto</a></li>
         </ul>
@@ -46,47 +52,47 @@
       <h2>Servicios</h2>
       <div class="container-grid">
         <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
-            <svg width="60" height="60" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-              <path fill="#B7D118"
-                d="M4 112.82c-.11 5.96 4.12 10.3 15.07 10.73s85.2.33 91.49.22c6.29-.11 13.55-2.06 13.66-10.52c.11-8.46-11.38-10.41-11.38-10.41s-92.36.11-96.15.33S4.13 105.34 4 112.82z" />
-              <path fill="#5A9821"
-                d="M94.47 106.4s23.83.16 24.98-.08c1.15-.25 2.07-1.66 2.23-3.06c-.08-5.03-5.86-5.35-5.86-5.35s.96-3.19-1.68-5.83c-3.46-3.79-8.55-2.25-8.55-2.25s-.82-2.72-3.22-4.21c-2.39-1.48-7.67-1.07-7.67-1.07l-.23 21.85zM25.86 91.98s-3.07-1.41-5.57-.39c-3.79 1.55-3.63 4.17-4.64 5.18c-1 1-6.44.64-7.89 5.33c-.62 2.01-.08 3.87 1.62 3.87s14.3-.39 14.3-.39l2.18-13.6z" />
-              <path fill="#875B50"
-                d="M23.7 89.2s.08 6.03 0 7.27c-.08 1.24-1.08 5.49-1.86 7.03c-.77 1.55-.93 2.94.15 3.17s8.19 0 8.19 0L29.03 89.2H23.7z" />
-              <path fill="#B7D118"
-                d="M28.72 90.72c-9.12.31-19.01-5.82-23.35-22.68s.33-36.73 5.68-45.25s10.02-12.48 15.7-12.32c6.97.21 14.25 9.88 17.36 17.99c3.02 7.86 2.93 14.43 2.93 14.43L31.51 89.04l-2.79 1.68z" />
-              <path fill="#FFF3E1" d="m64.81 40.09l-36.63 36.8l.29 29.18l27.22 4.3l45.12-3.37l.11-33.05z" />
-              <path fill="#5F4E47"
-                d="m26.81 104.94l2.53-1.4V76.08l-2.35 1.57s.26 27.29-.18 27.29zm72.73-27.38v25.81l2.53 1.4V78.52z" />
-              <path fill="#BCAA93" d="M65.06 44.02L26.99 79.65v-8.98l38.11-36.1l36.97 38.28v7.59z" />
-              <path fill="#AB5832"
-                d="m23.25 69.12l-2.23 4.12l5.99-.09s37.35-36.33 38.16-36.37c.97-.04 36.88 37 36.88 37l5.31-.08l-39.84-42.92l-5.85-.38l-38.42 38.72z" />
-              <path fill="#ED6C31"
-                d="M16.36 72.22c-.62.76-.01 1.17.5 1.17s6.36-.17 6.36-.17l40.33-39.24s.93-.95 1.59-.92c.72.04 1.65.94 1.65.94l40.52 39.72s4.62.01 5.36-.17c.8-.2.39-.95-.59-2.01c-.72-.78-41.7-41.31-42.37-42.01c-2.01-2.08-3-3.29-4.9-3.21c-1.91.08-3.04 1.49-4.95 3.25c-.57.54-43.23 42.32-43.5 42.65z" />
-              <path fill="#A6CFD5"
-                d="M88.5 86.44h8.26v-6.88c0-1.28-1.04-2.31-2.31-2.31H88.5v9.19zm-2.49 0v-9.19h-6.45c-1.28 0-2.31 1.04-2.31 2.31v6.88h8.76zm0 2.6h-8.76v6.45c0 1.28 1.04 2.31 2.31 2.31h6.45v-8.76zm2.49 0v8.76h5.95c1.28 0 2.31-1.04 2.31-2.31v-6.45H88.5zm-45.74-2.6h8.26v-6.88c0-1.28-1.04-2.31-2.31-2.31h-5.95v9.19zm-2.49 0v-9.19h-6.45c-1.28 0-2.31 1.04-2.31 2.31v6.88h8.76zm0 2.6h-8.76v6.45c0 1.28 1.04 2.31 2.31 2.31h6.45v-8.76zm2.49 0v8.76h5.95c1.28 0 2.31-1.04 2.31-2.31v-6.45h-8.26z" />
-              <path fill="#D27857"
-                d="M53.71 107.31s-.12-19.94 0-24.97c.12-5.03 4.85-9.38 10.31-9.19c6.77.23 10.25 4.04 10.5 8.95c.25 4.91.25 25.53.25 25.53l-21.06-.32z" />
-              <path fill="#AB5932"
-                d="M56.24 108.39s-.1-21.25 0-25.18c.12-4.88 3.8-7.44 8.07-7.19c4.97.28 7.43 2.93 7.62 6.77c.19 3.84.19 25.62.19 25.62l-15.88-.02z" />
-              <path fill="#D27857"
-                d="M69.55 91.07c-.02-3.5-.05-6.58-.1-7.53c-.13-2.54-1.93-4.52-5.44-4.64c-2.83-.1-5.16 2.11-5.23 4.72c-.02.96-.02 3.98 0 7.4l10.77.05zm-10.73 3.92c.03 4.68.07 8.99.07 8.99l10.69.03s0-4.29-.02-8.98l-10.74-.04z" />
-              <path fill="#FFBA02"
-                d="M69.59 92.87c-.04 1.13.42 2.06 1.76 2.06s1.84-.63 1.93-1.85c.08-1.09-.67-2.06-1.93-1.97c-1.26.08-1.73.96-1.76 1.76z" />
-              <path fill="#728037"
-                d="M76.93 113.92s8.69.04 15.03.06c6.51.01 10.34-.15 11.51-.79c.88-.48 1.13-8.58-2.84-10.82c-3.92-2.21-6.74-.61-8.12-.47c-1.83.18-2.71-1.13-5.81-1.21c-6.91-.18-8.97 5.55-8.97 5.55l-.8 7.68zm-50.81-.48c.81.77 5.77.49 12.53.44s12.27-.01 12.27-.01l2.67-6.53l-2.74-1.19s-.09-3.64-4.4-4.8c-2.98-.8-5.58.52-8.08.57c-2.51.05-3.77-.99-6.56-.33c-2.6.62-5.1 2.42-5.92 5.84c-.57 2.37-.43 5.39.23 6.01z" />
-              <path fill="#B0B0B0"
-                d="m50.28 120.83l.05-6.96h.51l-.01-7.75h26.98l-.09 7.75h.6v6.78c0-.01-28.04.22-28.04.18z" />
-              <path fill="#9B9B9B" d="M78.33 117.79v2.85l-28.06.19l.03-3.07zm-27.5-6.94l26.95.02v2.99l-26.95.01z" />
-              <path fill="#FDB900"
-                d="M80.2 108.04c.04.83.6 1.62 1.76 1.62c1.16 0 1.71-.92 1.76-1.66c.05-.74-.51-1.85-1.8-1.8c-1.3.04-1.77.91-1.72 1.84zm6.1-3.41c-.08.79.69 1.89 1.8 1.76s1.66-.92 1.57-1.85c-.09-.92-1.02-1.39-1.76-1.39c-.73 0-1.52.6-1.61 1.48zm9.84 4.42c.06 1.06.55 1.76 1.76 1.76c1.2 0 1.71-.87 1.71-1.66c0-1.16-.6-1.85-1.8-1.85s-1.71.88-1.67 1.75z" />
-              <path fill="#FEB800"
-                d="M30.11 108.36c-1.11.09-1.66.97-1.62 1.76c.05.79.6 1.71 1.62 1.62c1.02-.09 1.71-.69 1.66-1.62c-.03-.7-.51-1.85-1.66-1.76zm7.76-4.9c-.9 0-1.62.92-1.62 1.52s.46 1.71 1.62 1.66s1.52-.88 1.57-1.71s-.83-1.47-1.57-1.47zm2.08 5.83c-.08.78.42 1.94 1.66 1.89c1.25-.05 1.66-1.06 1.62-1.85c-.05-.79-.83-1.48-1.62-1.52c-.78-.05-1.57.55-1.66 1.48zm4.81-2.78c.04.65.42 1.57 1.52 1.43c1.11-.14 1.24-.79 1.2-1.48c-.05-.83-.65-1.25-1.39-1.25s-1.38.61-1.33 1.3z" />
-            </svg>
-            <p>
-              <strong>Diseño, suministro e instalación de Jardines</strong>
-            </p>
-          
+          <svg width="60" height="60" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B7D118"
+              d="M4 112.82c-.11 5.96 4.12 10.3 15.07 10.73s85.2.33 91.49.22c6.29-.11 13.55-2.06 13.66-10.52c.11-8.46-11.38-10.41-11.38-10.41s-92.36.11-96.15.33S4.13 105.34 4 112.82z" />
+            <path fill="#5A9821"
+              d="M94.47 106.4s23.83.16 24.98-.08c1.15-.25 2.07-1.66 2.23-3.06c-.08-5.03-5.86-5.35-5.86-5.35s.96-3.19-1.68-5.83c-3.46-3.79-8.55-2.25-8.55-2.25s-.82-2.72-3.22-4.21c-2.39-1.48-7.67-1.07-7.67-1.07l-.23 21.85zM25.86 91.98s-3.07-1.41-5.57-.39c-3.79 1.55-3.63 4.17-4.64 5.18c-1 1-6.44.64-7.89 5.33c-.62 2.01-.08 3.87 1.62 3.87s14.3-.39 14.3-.39l2.18-13.6z" />
+            <path fill="#875B50"
+              d="M23.7 89.2s.08 6.03 0 7.27c-.08 1.24-1.08 5.49-1.86 7.03c-.77 1.55-.93 2.94.15 3.17s8.19 0 8.19 0L29.03 89.2H23.7z" />
+            <path fill="#B7D118"
+              d="M28.72 90.72c-9.12.31-19.01-5.82-23.35-22.68s.33-36.73 5.68-45.25s10.02-12.48 15.7-12.32c6.97.21 14.25 9.88 17.36 17.99c3.02 7.86 2.93 14.43 2.93 14.43L31.51 89.04l-2.79 1.68z" />
+            <path fill="#FFF3E1" d="m64.81 40.09l-36.63 36.8l.29 29.18l27.22 4.3l45.12-3.37l.11-33.05z" />
+            <path fill="#5F4E47"
+              d="m26.81 104.94l2.53-1.4V76.08l-2.35 1.57s.26 27.29-.18 27.29zm72.73-27.38v25.81l2.53 1.4V78.52z" />
+            <path fill="#BCAA93" d="M65.06 44.02L26.99 79.65v-8.98l38.11-36.1l36.97 38.28v7.59z" />
+            <path fill="#AB5832"
+              d="m23.25 69.12l-2.23 4.12l5.99-.09s37.35-36.33 38.16-36.37c.97-.04 36.88 37 36.88 37l5.31-.08l-39.84-42.92l-5.85-.38l-38.42 38.72z" />
+            <path fill="#ED6C31"
+              d="M16.36 72.22c-.62.76-.01 1.17.5 1.17s6.36-.17 6.36-.17l40.33-39.24s.93-.95 1.59-.92c.72.04 1.65.94 1.65.94l40.52 39.72s4.62.01 5.36-.17c.8-.2.39-.95-.59-2.01c-.72-.78-41.7-41.31-42.37-42.01c-2.01-2.08-3-3.29-4.9-3.21c-1.91.08-3.04 1.49-4.95 3.25c-.57.54-43.23 42.32-43.5 42.65z" />
+            <path fill="#A6CFD5"
+              d="M88.5 86.44h8.26v-6.88c0-1.28-1.04-2.31-2.31-2.31H88.5v9.19zm-2.49 0v-9.19h-6.45c-1.28 0-2.31 1.04-2.31 2.31v6.88h8.76zm0 2.6h-8.76v6.45c0 1.28 1.04 2.31 2.31 2.31h6.45v-8.76zm2.49 0v8.76h5.95c1.28 0 2.31-1.04 2.31-2.31v-6.45H88.5zm-45.74-2.6h8.26v-6.88c0-1.28-1.04-2.31-2.31-2.31h-5.95v9.19zm-2.49 0v-9.19h-6.45c-1.28 0-2.31 1.04-2.31 2.31v6.88h8.76zm0 2.6h-8.76v6.45c0 1.28 1.04 2.31 2.31 2.31h6.45v-8.76zm2.49 0v8.76h5.95c1.28 0 2.31-1.04 2.31-2.31v-6.45h-8.26z" />
+            <path fill="#D27857"
+              d="M53.71 107.31s-.12-19.94 0-24.97c.12-5.03 4.85-9.38 10.31-9.19c6.77.23 10.25 4.04 10.5 8.95c.25 4.91.25 25.53.25 25.53l-21.06-.32z" />
+            <path fill="#AB5932"
+              d="M56.24 108.39s-.1-21.25 0-25.18c.12-4.88 3.8-7.44 8.07-7.19c4.97.28 7.43 2.93 7.62 6.77c.19 3.84.19 25.62.19 25.62l-15.88-.02z" />
+            <path fill="#D27857"
+              d="M69.55 91.07c-.02-3.5-.05-6.58-.1-7.53c-.13-2.54-1.93-4.52-5.44-4.64c-2.83-.1-5.16 2.11-5.23 4.72c-.02.96-.02 3.98 0 7.4l10.77.05zm-10.73 3.92c.03 4.68.07 8.99.07 8.99l10.69.03s0-4.29-.02-8.98l-10.74-.04z" />
+            <path fill="#FFBA02"
+              d="M69.59 92.87c-.04 1.13.42 2.06 1.76 2.06s1.84-.63 1.93-1.85c.08-1.09-.67-2.06-1.93-1.97c-1.26.08-1.73.96-1.76 1.76z" />
+            <path fill="#728037"
+              d="M76.93 113.92s8.69.04 15.03.06c6.51.01 10.34-.15 11.51-.79c.88-.48 1.13-8.58-2.84-10.82c-3.92-2.21-6.74-.61-8.12-.47c-1.83.18-2.71-1.13-5.81-1.21c-6.91-.18-8.97 5.55-8.97 5.55l-.8 7.68zm-50.81-.48c.81.77 5.77.49 12.53.44s12.27-.01 12.27-.01l2.67-6.53l-2.74-1.19s-.09-3.64-4.4-4.8c-2.98-.8-5.58.52-8.08.57c-2.51.05-3.77-.99-6.56-.33c-2.6.62-5.1 2.42-5.92 5.84c-.57 2.37-.43 5.39.23 6.01z" />
+            <path fill="#B0B0B0"
+              d="m50.28 120.83l.05-6.96h.51l-.01-7.75h26.98l-.09 7.75h.6v6.78c0-.01-28.04.22-28.04.18z" />
+            <path fill="#9B9B9B" d="M78.33 117.79v2.85l-28.06.19l.03-3.07zm-27.5-6.94l26.95.02v2.99l-26.95.01z" />
+            <path fill="#FDB900"
+              d="M80.2 108.04c.04.83.6 1.62 1.76 1.62c1.16 0 1.71-.92 1.76-1.66c.05-.74-.51-1.85-1.8-1.8c-1.3.04-1.77.91-1.72 1.84zm6.1-3.41c-.08.79.69 1.89 1.8 1.76s1.66-.92 1.57-1.85c-.09-.92-1.02-1.39-1.76-1.39c-.73 0-1.52.6-1.61 1.48zm9.84 4.42c.06 1.06.55 1.76 1.76 1.76c1.2 0 1.71-.87 1.71-1.66c0-1.16-.6-1.85-1.8-1.85s-1.71.88-1.67 1.75z" />
+            <path fill="#FEB800"
+              d="M30.11 108.36c-1.11.09-1.66.97-1.62 1.76c.05.79.6 1.71 1.62 1.62c1.02-.09 1.71-.69 1.66-1.62c-.03-.7-.51-1.85-1.66-1.76zm7.76-4.9c-.9 0-1.62.92-1.62 1.52s.46 1.71 1.62 1.66s1.52-.88 1.57-1.71s-.83-1.47-1.57-1.47zm2.08 5.83c-.08.78.42 1.94 1.66 1.89c1.25-.05 1.66-1.06 1.62-1.85c-.05-.79-.83-1.48-1.62-1.52c-.78-.05-1.57.55-1.66 1.48zm4.81-2.78c.04.65.42 1.57 1.52 1.43c1.11-.14 1.24-.79 1.2-1.48c-.05-.83-.65-1.25-1.39-1.25s-1.38.61-1.33 1.3z" />
+          </svg>
+          <p>
+            <strong>Diseño, suministro e instalación de Jardines</strong>
+          </p>
+
         </div>
 
         <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
@@ -101,36 +107,110 @@
           </p>
 
         </div>
-        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">Instalación y mantenimiento de sistemas de
-          riego</div>
-        <div> Asesorías integrales en jardinería </div>
-        <div> Asesorías integrales en jardinería </div>
-        <div> Venta de plantas ornamentales</div>
-        <div> Mantenimiento de zonas verdes</div>
-        <div> Fumigación de jardines</div>
-
-        <div> Iluminación de exteriores</div>
+        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
+          <svg width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#bbea9b"
+              d="M11 7h2v2h-2V7M5 22h4V10H5v12m9-11h2V9h-2v2m3-1h2V8h-2v2m0-5v2h2V5h-2m-3 3h2V6h-2v2m3 5h2v-2h-2v2M5 7h.33L6 9h2l.67-2H9V6H5v1Z" />
+          </svg>
+          <p>
+            <strong>
+              Instalación y mantenimiento de sistemas de riego
+            </strong>
+          </p>
+        </div>
+        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
+          <svg xmlns="http://www.w3.org/2000/svg" height="65"
+            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <style>
+              svg {
+                fill: #97cd55
+              }
+            </style>
+            <path
+              d="M256 48C141.1 48 48 141.1 48 256v40c0 13.3-10.7 24-24 24s-24-10.7-24-24V256C0 114.6 114.6 0 256 0S512 114.6 512 256V400.1c0 48.6-39.4 88-88.1 88L313.6 488c-8.3 14.3-23.8 24-41.6 24H240c-26.5 0-48-21.5-48-48s21.5-48 48-48h32c17.8 0 33.3 9.7 41.6 24l110.4 .1c22.1 0 40-17.9 40-40V256c0-114.9-93.1-208-208-208zM144 208h16c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H144c-35.3 0-64-28.7-64-64V272c0-35.3 28.7-64 64-64zm224 0c35.3 0 64 28.7 64 64v48c0 35.3-28.7 64-64 64H352c-17.7 0-32-14.3-32-32V240c0-17.7 14.3-32 32-32h16z" />
+          </svg>
+          <p>
+            <strong>
+              Asesorías integrales en jardinería
+            </strong>
+          </p>
+        </div>
+        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
+          <svg width="64" height="64" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#f2071f" fill-rule="evenodd"
+              d="M4.822 1.112a3.08 3.08 0 0 1 5.256 2.08a3.07 3.07 0 0 1 3.767 1.992l-.475.156l.475-.155a3.052 3.052 0 0 1-1.86 3.813a3.04 3.04 0 0 1-.753 4.168a3.09 3.09 0 0 1-4.227-.581a3.09 3.09 0 0 1-5.043-.291A3.04 3.04 0 0 1 2.022 9a3.062 3.062 0 0 1 1.9-5.817a3.08 3.08 0 0 1 .9-2.07ZM9.205 7.26c0 1.21-.987 2.19-2.205 2.19a2.198 2.198 0 0 1-2.205-2.19c0-1.21.987-2.19 2.205-2.19s2.205.98 2.205 2.19Z"
+              clip-rule="evenodd" />
+          </svg>
+          <p>
+            <strong>
+              Venta de plantas ornamentales
+            </strong>
+          </p>
+        </div>
+        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000">
+          <svg width="80" height="80" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#b1cc33"
+              d="M34.04 34.84H54.7a1.833 1.833 0 0 1 1.833 1.833v6.16a1.833 1.833 0 0 1-1.833 1.833H35.23a1.833 1.833 0 0 1-1.833-1.833v-7.342a.651.651 0 0 1 .651-.651z" />
+            <path fill="#5c9e31"
+              d="M35.89 49.79v5.244h18.818l-.015-2.615l1.855-2.645l-1.84.016h-3.252v-5.123h-12.48v5.123z" />
+            <circle cx="29.62" cy="52.29" r="7.618" fill="#d0cfce" />
+            <circle cx="59.08" cy="54.85" r="5.063" fill="#d0cfce" />
+            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M7.95 7.957s19.41 5.496 25.24 26.36m-.03.103h21.05a1.868 1.872 0 0 1 1.868 1.872v6.288a1.868 1.872 0 0 1-1.868 1.872H34.37a1.868 1.872 0 0 1-1.868-1.872v-7.494a.664.665 0 0 1 .664-.665zm20.16 20.61H35.89" />
+            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.29"
+              d="M33.64 49.24h1.42v-3.37h8.22v3.37h2.14l1.35-.01v.09"
+              transform="matrix(1.549 0 0 1.552 -16.13 -26.71)" />
+            <ellipse cx="28.65" cy="52.23" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" rx="7.764" ry="7.776" />
+            <ellipse cx="58.68" cy="54.63" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2" rx="5.37" ry="5.379" />
+            <rect width="6.725" height="3.728" x="45.58" y="30.7" rx="1.201" ry="1.201" />
+          </svg>
+          <p>
+            <strong>
+              Mantenimiento de zonas verdes
+            </strong>
+          </p>
+        </div>
+        <div class="item-grid" data-aos="fade-up" data-aos-duration="2000"> 
+          <p><strong>
+            Iluminación de exteriores
+          </strong></p>
+          </div>
         <div> Fuentes ornamentales</div>
         <div> Poda y forma de setos naturales y arboles </div>
         <div> Parques infantiles </div>
+      </div> fumigacion de jardienes </div>
       </div>
     </section>
     <section id="nosotros">
-      <h2>Nosotros</h2>
-      <div>
-        <h3>quienes somos</h3>
-        <p>Somos una empresa prestadora de servicio paisajístico, diseños, mantenimiento y jardinería integral,
-          comprometidos en la conservación de zonas verdes, haciendo uso de técnicas paisajísticas y arquitectónicas que
-          garantizan agradables ambientes naturales.</p>
+      <h2>Identificanos</h2>
+      <div class="nosotros-item">
+        <div data-aos="fade-up-right" data-aos-duration="2000">
+          <img src="/src/img/equipo.jpeg" alt="">
+        </div>
+        <div class="item-text">
+          <h3>¿quienes somos?</h3>
+          <p> &nbsp &nbsp &nbsp &nbsp &nbsp  Somos una empresa prestadora de servicio paisajístico, diseños, mantenimiento y jardinería integral,
+            comprometidos en la conservación de zonas verdes, haciendo uso de técnicas paisajísticas y arquitectónicas que
+            garantizan agradables ambientes naturales.</p>
+        </div>
+      </div>
+      <div class="nosotros-item">
+        
+        <div class="item-text">
+          <h3>¿como lo hacemos?</h3>
+          <p> &nbsp &nbsp &nbsp &nbsp &nbsp  Contamos con equipo y herramientas que nos permiten realizar trabajos limpios y eficientes, al igual que
+            personal altamente calificado, compromet5idos con la excelencia y calidad en la prestación de nuestro
+            servicio. Hacemos uso de los múltiples mobiliarios, tales como, los sistemas de riego, fuentes ornamentales e
+            iluminación de exteriores.</p>
+        </div>
+        <div data-aos="fade-up-left" data-aos-duration="2000">
+          <img  src="/src/img/foto 3.jpeg" alt="">
+        </div>
       </div>
 
-      <div>
-        <h3>como lo hacemos </h3>
-        <p>Contamos con equipo y herramientas que nos permiten realizar trabajos limpios y eficientes, al igual que
-          personal altamente calificado, compromet5idos con la excelencia y calidad en la prestación de nuestro
-          servicio. Hacemos uso de los múltiples mobiliarios, tales como, los sistemas de riego, fuentes ornamentales e
-          iluminación de exteriores.</p>
-      </div>
+     
 
     </section>
 

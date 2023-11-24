@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+#nosotros {
+    text-align: center;
+    padding: 2% 5%;
+    background-color: rgba(174, 243, 64, 0.473);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: rgb(90, 139, 4);
+    font-family: 'Agbalumo';
+}
+
+
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: rgb(90, 139, 4);
+    font-family: 'Agbalumo';
+}
+#nosotros .nosotros-item {
+    font-size: 1.2rem;
+    display: flex;
+    margin: 4rem 0;
+}
+
+
+#nosotros .nosotros-item img{
+    width: 95%;
+    border-radius: 20px;
+}
+
+.item-text {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin: 0 4rem 0 1.8rem;
+    font-family: 'Roboto Condensed';
+}
