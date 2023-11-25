@@ -29,4 +29,24 @@ navbarLinksContainer.addEventListener("click", (clickEvent) => {
 
 navbarMenu.addEventListener("click", closeMobileNavbar);
 
+const USERLOGIN = JSON.parse(localStorage.getItem('login_success'))
 
+if(USERLOGIN){
+  document.getElementById('name').innerHTML= USERLOGIN.name.split(' ', 1);
+  document.getElementById('entrar-salir').innerHTML= "Salir";
+}
+else {
+  document.getElementById('entrar-salir').innerHTML= "Entrar";
+}
+
+const entrarSalir = navbar.querySelector("#entrar-salir");
+
+entrarSalir.addEventListener("click",  () => {
+  if(USERLOGIN){
+    localStorage.setItem('login_success', JSON.stringify(null))
+    return 0;
+  }else{
+    window.location.href = 'login.html'
+  }
+
+})

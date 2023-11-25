@@ -1,25 +1,63 @@
 <!DOCTYPE html>
-<HTml>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-UA-compatible" content= "IE=edge">
-    <meta name="viewport " content="width=device-width, initial-scale1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Nativo</title>
     <link href="src/styles/auth.css" rel="stylesheet">
-    <title>login</title>
- </head>
- <body>
-    <section>
-        <h2>Inicio de Sesion En <br> NATIVO</h2>
-        <form action="" id="loginform">
-            <label for="">Mail</label>
-            <input type="email" placeholder="..." id="email" required autofocus>
-            <label for="">contraseña</label>
-            <input type="password" placeholder="..." id="password" required >
-            <input type="submit" value="ingresar">
-        </form>
-        <p>¿no tienes una cuenta? <a href="signup.html">registrate</a></p>
-    </section>
+</head>
 
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#" id="signupform">
+                <h1>Crea una Cuenta</h1>
+                <div class="social-container">
+
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Nombre completo" id="name" required />
+                <input type="email" placeholder="Correo" id="email" required />
+                <select name="" id="genero">
+                    <option value="hombre">♂ Hombre</option>
+                    <option value="mujer">♀ Mujer</option>
+                </select>
+                <input type="password" placeholder="Contraseña" id="password" required />
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form id="loginform">
+                <h1>ENTRAR</h1>
+                <div class="social-container">
+                </div>
+                <span>Usa los datos de tu cuenta</span>
+                <input type="email" placeholder="Correo" id="email-login" required autofocus />
+                <input type="password" placeholder="Contraseña" id="password-login" required />
+                <button>Entrar</button>
+
+                <a style="position: absolute; margin-top: 25rem; font-size: 1.5rem;" href="index.html">Volver al Inicio</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    
+                    <h1>Bienvenido a NATIVO!</h1>
+                    <p>Para mantenerse conectado con nosotros, inicie sesión con su información personal</p>
+                    <button class="ghost" id="signIn">Iniciar Sesión</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hola, Amigo(a)!</h1>
+                    <p>Que buenos es Tenerte de vuelta, ingresa tus datos por favor</p>
+                    <button class="ghost" id="signUp">registrate</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="src/js/login.js"></script>
- </body>
-</HTml>
+
+</body>
+
+</html>
